@@ -1,0 +1,1 @@
+module.exports.Unsend = async (api, { reaction, senderID, messageID }) => reaction === '😠' && senderID === api.getCurrentUserID() && await api.unsendMessage(messageID);
